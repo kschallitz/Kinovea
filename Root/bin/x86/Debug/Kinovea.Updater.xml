@@ -1,0 +1,370 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Kinovea.Updater</name>
+    </assembly>
+    <members>
+        <member name="T:Kinovea.Updater.DownloadGrid">
+            <summary>
+            todo: remove.
+            This control was only used in the more complex update dialog.
+            </summary>
+        </member>
+        <member name="F:Kinovea.Updater.DownloadGrid.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Kinovea.Updater.DownloadGrid.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Kinovea.Updater.DownloadGrid.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:CodeProject.Downloader.FileDownloader">
+            <summary>
+            Downloads and resumes files from HTTP, FTP, and File (file://) URLS
+            </summary>
+        </member>
+        <member name="M:CodeProject.Downloader.FileDownloader.Download(System.String)">
+            <summary>
+            Begin downloading the file at the specified url, and save it to the current folder.
+            </summary>
+        </member>
+        <member name="M:CodeProject.Downloader.FileDownloader.Download(System.String,System.String)">
+            <summary>
+            Begin downloading the file at the specified url, and save it to the given folder.
+            </summary>
+        </member>
+        <member name="M:CodeProject.Downloader.FileDownloader.Download(System.Collections.Generic.List{System.String})">
+            <summary>
+            Download a file from a list or URLs. If downloading from one of the URLs fails,
+            another URL is tried.
+            </summary>
+        </member>
+        <member name="M:CodeProject.Downloader.FileDownloader.Download(System.Collections.Generic.List{System.String},System.String)">
+            <summary>
+            Download a file from a list or URLs. If downloading from one of the URLs fails,
+            another URL is tried.
+            </summary>
+        </member>
+        <member name="M:CodeProject.Downloader.FileDownloader.AsyncDownload(System.String)">
+            <summary>
+            Asynchronously download a file from the url.
+            </summary>
+        </member>
+        <member name="M:CodeProject.Downloader.FileDownloader.AsyncDownload(System.String,System.String)">
+            <summary>
+            Asynchronously download a file from the url to the destination folder.
+            </summary>
+        </member>
+        <member name="M:CodeProject.Downloader.FileDownloader.AsyncDownload(System.Collections.Generic.List{System.String},System.String)">
+            <summary>
+            Asynchronously download a file from a list or URLs. If downloading from one of the URLs fails,
+            another URL is tried.
+            </summary>
+        </member>
+        <member name="M:CodeProject.Downloader.FileDownloader.AsyncDownload(System.Collections.Generic.List{System.String})">
+            <summary>
+            Asynchronously download a file from a list or URLs. If downloading from one of the URLs fails,
+            another URL is tried.
+            </summary>
+        </member>
+        <member name="M:CodeProject.Downloader.FileDownloader.WaitCallbackMethod(System.Object)">
+            <summary>
+            A WaitCallback used by the AsyncDownload methods.
+            </summary>
+        </member>
+        <member name="P:CodeProject.Downloader.FileDownloader.DownloadingTo">
+            <summary>
+            This is the name of the file we get back from the server when we
+            try to download the provided url. It will only contain a non-null
+            string when we've successfully contacted the server and it has started
+            sending us a file.
+            </summary>
+        </member>
+        <member name="E:CodeProject.Downloader.FileDownloader.ProgressChanged">
+            <summary>
+            Progress update
+            </summary>
+        </member>
+        <member name="P:CodeProject.Downloader.FileDownloader.Proxy">
+            <summary>
+            Proxy to be used for http and ftp requests.
+            </summary>
+        </member>
+        <member name="E:CodeProject.Downloader.FileDownloader.DownloadComplete">
+            <summary>
+            Fired when progress reaches 100%.
+            </summary>
+        </member>
+        <member name="T:CodeProject.Downloader.DownloadData">
+            <summary>
+            Constains the connection to the file server and other statistics about a file
+            that's downloading.
+            </summary>
+        </member>
+        <member name="M:CodeProject.Downloader.DownloadData.ValidateResponse(System.Net.WebResponse,System.String)">
+            <summary>
+            Checks whether a WebResponse is an error.
+            </summary>
+        </member>
+        <member name="M:CodeProject.Downloader.DownloadData.GetFileSize(System.String)">
+            <summary>
+            Checks the file size of a remote file. If size is -1, then the file size
+            could not be determined.
+            </summary>
+            <param name="url"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CodeProject.Downloader.DownloadEventArgs">
+            <summary>
+            Progress of a downloading file.
+            </summary>
+        </member>
+        <member name="T:Kinovea.Updater.Languages.UpdaterLang">
+            <summary>
+              Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+            </summary>
+        </member>
+        <member name="P:Kinovea.Updater.Languages.UpdaterLang.ResourceManager">
+            <summary>
+              Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+            </summary>
+        </member>
+        <member name="P:Kinovea.Updater.Languages.UpdaterLang.Culture">
+            <summary>
+              Remplace la propriété CurrentUICulture du thread actuel pour toutes
+              les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+            </summary>
+        </member>
+        <member name="P:Kinovea.Updater.Languages.UpdaterLang.mnuCheckForUpdates">
+            <summary>
+              Recherche une chaîne localisée semblable à Software Update….
+            </summary>
+        </member>
+        <member name="P:Kinovea.Updater.Languages.UpdaterLang.Updater_Behind">
+            <summary>
+              Recherche une chaîne localisée semblable à A new version is available!.
+            </summary>
+        </member>
+        <member name="P:Kinovea.Updater.Languages.UpdaterLang.Updater_BrowseFolderDescription">
+            <summary>
+              Recherche une chaîne localisée semblable à Please choose the target directory for the installer file..
+            </summary>
+        </member>
+        <member name="P:Kinovea.Updater.Languages.UpdaterLang.Updater_ChooseDestinationFolder">
+            <summary>
+              Recherche une chaîne localisée semblable à Choose Destination Folder.
+            </summary>
+        </member>
+        <member name="P:Kinovea.Updater.Languages.UpdaterLang.Updater_CurrentVersion">
+            <summary>
+              Recherche une chaîne localisée semblable à Current Version :.
+            </summary>
+        </member>
+        <member name="P:Kinovea.Updater.Languages.UpdaterLang.Updater_Download">
+            <summary>
+              Recherche une chaîne localisée semblable à Download.
+            </summary>
+        </member>
+        <member name="P:Kinovea.Updater.Languages.UpdaterLang.Updater_Downloading">
+            <summary>
+              Recherche une chaîne localisée semblable à Downloading New Version....
+            </summary>
+        </member>
+        <member name="P:Kinovea.Updater.Languages.UpdaterLang.Updater_FileSize">
+            <summary>
+              Recherche une chaîne localisée semblable à File Size :.
+            </summary>
+        </member>
+        <member name="P:Kinovea.Updater.Languages.UpdaterLang.Updater_FilterAll">
+            <summary>
+              Recherche une chaîne localisée semblable à All Languages.
+            </summary>
+        </member>
+        <member name="P:Kinovea.Updater.Languages.UpdaterLang.Updater_HelpItem_NeedUpdate">
+            <summary>
+              Recherche une chaîne localisée semblable à Update available.
+            </summary>
+        </member>
+        <member name="P:Kinovea.Updater.Languages.UpdaterLang.Updater_HelpItem_NewItem">
+            <summary>
+              Recherche une chaîne localisée semblable à New item.
+            </summary>
+        </member>
+        <member name="P:Kinovea.Updater.Languages.UpdaterLang.Updater_HelpItem_UpToDate">
+            <summary>
+              Recherche une chaîne localisée semblable à Up to date.
+            </summary>
+        </member>
+        <member name="P:Kinovea.Updater.Languages.UpdaterLang.Updater_Instruction">
+            <summary>
+              Recherche une chaîne localisée semblable à Click the &apos;Download&apos; button to begin downloading..
+            </summary>
+        </member>
+        <member name="P:Kinovea.Updater.Languages.UpdaterLang.Updater_InternetError">
+            <summary>
+              Recherche une chaîne localisée semblable à An error occurred while checking for updates. Please ensure an Internet connection is available. .
+            </summary>
+        </member>
+        <member name="P:Kinovea.Updater.Languages.UpdaterLang.Updater_LblAllManualsUpToDate">
+            <summary>
+              Recherche une chaîne localisée semblable à All user guides are up to date..
+            </summary>
+        </member>
+        <member name="P:Kinovea.Updater.Languages.UpdaterLang.Updater_LblAllVideosUpToDate">
+            <summary>
+              Recherche une chaîne localisée semblable à All videos are up to date..
+            </summary>
+        </member>
+        <member name="P:Kinovea.Updater.Languages.UpdaterLang.Updater_LblAllVideosUpToDateCategory">
+            <summary>
+              Recherche une chaîne localisée semblable à All videos in this language are up to date..
+            </summary>
+        </member>
+        <member name="P:Kinovea.Updater.Languages.UpdaterLang.Updater_LblChangeLog">
+            <summary>
+              Recherche une chaîne localisée semblable à Change Log :.
+            </summary>
+        </member>
+        <member name="P:Kinovea.Updater.Languages.UpdaterLang.Updater_LblFilterByLang">
+            <summary>
+              Recherche une chaîne localisée semblable à Filter by language :.
+            </summary>
+        </member>
+        <member name="P:Kinovea.Updater.Languages.UpdaterLang.Updater_LblManuals">
+            <summary>
+              Recherche une chaîne localisée semblable à Manual.
+            </summary>
+        </member>
+        <member name="P:Kinovea.Updater.Languages.UpdaterLang.Updater_LblSelectManuals">
+            <summary>
+              Recherche une chaîne localisée semblable à Select the manual you wish to download :.
+            </summary>
+        </member>
+        <member name="P:Kinovea.Updater.Languages.UpdaterLang.Updater_LblSelectVideos">
+            <summary>
+              Recherche une chaîne localisée semblable à Select the videos you wish to download :.
+            </summary>
+        </member>
+        <member name="P:Kinovea.Updater.Languages.UpdaterLang.Updater_LblSoftware">
+            <summary>
+              Recherche une chaîne localisée semblable à Software.
+            </summary>
+        </member>
+        <member name="P:Kinovea.Updater.Languages.UpdaterLang.Updater_LblTotalSelected">
+            <summary>
+              Recherche une chaîne localisée semblable à Total selected :.
+            </summary>
+        </member>
+        <member name="P:Kinovea.Updater.Languages.UpdaterLang.Updater_LblVideos">
+            <summary>
+              Recherche une chaîne localisée semblable à Help Videos.
+            </summary>
+        </member>
+        <member name="P:Kinovea.Updater.Languages.UpdaterLang.Updater_mboxDownloadSuccess_Description">
+            <summary>
+              Recherche une chaîne localisée semblable à The new version was successfully downloaded.\n Please close Kinovea and launch the installer from where you saved it. .
+            </summary>
+        </member>
+        <member name="P:Kinovea.Updater.Languages.UpdaterLang.Updater_MegaBytes">
+            <summary>
+              Recherche une chaîne localisée semblable à MB.
+            </summary>
+        </member>
+        <member name="P:Kinovea.Updater.Languages.UpdaterLang.Updater_NewVersion">
+            <summary>
+              Recherche une chaîne localisée semblable à New Version.
+            </summary>
+        </member>
+        <member name="P:Kinovea.Updater.Languages.UpdaterLang.Updater_Quit">
+            <summary>
+              Recherche une chaîne localisée semblable à Quit.
+            </summary>
+        </member>
+        <member name="P:Kinovea.Updater.Languages.UpdaterLang.Updater_Title">
+            <summary>
+              Recherche une chaîne localisée semblable à Kinovea - Checking for new version..
+            </summary>
+        </member>
+        <member name="P:Kinovea.Updater.Languages.UpdaterLang.Updater_UpToDate">
+            <summary>
+              Recherche une chaîne localisée semblable à Your version is up to date !.
+            </summary>
+        </member>
+        <member name="T:Kinovea.Updater.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Kinovea.Updater.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Kinovea.Updater.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:Kinovea.Updater.UpdateDialog">
+            <summary>
+            Update dialog. This dialog is DEPRECATED as of 2010-05-18. Use UpdateDialog2.
+            This dialog was richer than the new one, you could download example videos, 
+            user guides, select the language, etc.
+            However, this feature is not really needed. The updates to videos and user guides 
+            are only done when a new software release is made, hence the simplification.
+            </summary>
+        </member>
+        <member name="F:Kinovea.Updater.UpdateDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Kinovea.Updater.UpdateDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Kinovea.Updater.UpdateDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Kinovea.Updater.UpdateDialog2">
+            <summary>
+            This is the simplified update dialog.
+            It just handles the update of the software itself.
+            We only come here if there is an actual update available.
+            </summary>
+        </member>
+        <member name="F:Kinovea.Updater.UpdateDialog2.components">
+            <summary>
+            Designer variable used to keep track of non-visual components.
+            </summary>
+        </member>
+        <member name="M:Kinovea.Updater.UpdateDialog2.Dispose(System.Boolean)">
+            <summary>
+            Disposes resources used by the form.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Kinovea.Updater.UpdateDialog2.InitializeComponent">
+            <summary>
+            This method is required for Windows Forms designer support.
+            Do not change the method contents inside the source code editor. The Forms designer might
+            not be able to load this method if it was changed manually.
+            </summary>
+        </member>
+    </members>
+</doc>

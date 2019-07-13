@@ -1,0 +1,8 @@
+C:\Projects\Kinovea-64\SharpVectorRenderingEngine\bin\x86\Debug\SharpVectorRenderingEngine.dll
+C:\Projects\Kinovea-64\SharpVectorRenderingEngine\bin\x86\Debug\SharpVectorBindings.dll
+C:\Projects\Kinovea-64\SharpVectorRenderingEngine\bin\x86\Debug\SharpVectorCss.dll
+C:\Projects\Kinovea-64\SharpVectorRenderingEngine\bin\x86\Debug\SharpVectorDom.dll
+C:\Projects\Kinovea-64\SharpVectorRenderingEngine\bin\x86\Debug\SharpVectorObjectModel.dll
+C:\Projects\Kinovea-64\SharpVectorRenderingEngine\bin\x86\Debug\SharpVectorUtil.dll
+C:\Projects\Kinovea-64\SharpVectorRenderingEngine\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Projects\Kinovea-64\SharpVectorRenderingEngine\obj\x86\Debug\SharpVectorRenderingEngine.dll

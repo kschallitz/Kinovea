@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Kinovea.FileBrowser</name>
+    </assembly>
+    <members>
+        <member name="T:Kinovea.FileBrowser.FileBrowserUserInterface">
+            <summary>
+            The user interface for all explorer like stuff.
+            We maintain the synchronization between the shortcut and exptree tab
+            when we move between shortcuts. We don't maintain it the other way around.
+            </summary>
+        </member>
+        <member name="F:Kinovea.FileBrowser.FileBrowserUserInterface.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Kinovea.FileBrowser.FileBrowserUserInterface.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Kinovea.FileBrowser.FileBrowserUserInterface.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Kinovea.FileBrowser.Languages.FileBrowserLang">
+            <summary>
+              Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+            </summary>
+        </member>
+        <member name="P:Kinovea.FileBrowser.Languages.FileBrowserLang.ResourceManager">
+            <summary>
+              Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+            </summary>
+        </member>
+        <member name="P:Kinovea.FileBrowser.Languages.FileBrowserLang.Culture">
+            <summary>
+              Remplace la propriété CurrentUICulture du thread actuel pour toutes
+              les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+            </summary>
+        </member>
+        <member name="P:Kinovea.FileBrowser.Languages.FileBrowserLang.lblFolders">
+            <summary>
+              Recherche une chaîne localisée semblable à Folders:.
+            </summary>
+        </member>
+        <member name="P:Kinovea.FileBrowser.Languages.FileBrowserLang.lblVideoFiles">
+            <summary>
+              Recherche une chaîne localisée semblable à Video Files:.
+            </summary>
+        </member>
+        <member name="P:Kinovea.FileBrowser.Languages.FileBrowserLang.mnuAddShortcut">
+            <summary>
+              Recherche une chaîne localisée semblable à Add shortcut.
+            </summary>
+        </member>
+        <member name="P:Kinovea.FileBrowser.Languages.FileBrowserLang.mnuAddToShortcuts">
+            <summary>
+              Recherche une chaîne localisée semblable à Add to shortcuts.
+            </summary>
+        </member>
+        <member name="P:Kinovea.FileBrowser.Languages.FileBrowserLang.mnuDeleteShortcut">
+            <summary>
+              Recherche une chaîne localisée semblable à Delete shortcut.
+            </summary>
+        </member>
+        <member name="P:Kinovea.FileBrowser.Languages.FileBrowserLang.mnuEditShortcut">
+            <summary>
+              Recherche une chaîne localisée semblable à Edit shortcut.
+            </summary>
+        </member>
+        <member name="P:Kinovea.FileBrowser.Languages.FileBrowserLang.tabExplorer">
+            <summary>
+              Recherche une chaîne localisée semblable à Explorer.
+            </summary>
+        </member>
+        <member name="P:Kinovea.FileBrowser.Languages.FileBrowserLang.tabFavorites">
+            <summary>
+              Recherche une chaîne localisée semblable à Shortcuts.
+            </summary>
+        </member>
+        <member name="T:Kinovea.FileBrowser.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Kinovea.FileBrowser.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Kinovea.FileBrowser.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>
